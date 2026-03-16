@@ -34,3 +34,5 @@ git status: Da el estado del repositorio.
 git push: Publica en la nube los ultimos commit.
 
 git pull: Descarga de la nube los ultimos commit.
+
+cambio(commit en clase)
