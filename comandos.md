@@ -19,15 +19,17 @@ git add archivo.txt
 git commit -m "cambio en archivo"
 git push
 
-Comandos adicionales(del archivo del profesor)
+Comandos adicionales(del profesor):
+
+git clone <url-del-repositorio>: Clonar repositorio
+
+gh repo clone <repositorio>: Clonar repositorio con GitHub CLI
 
 gh auth login: Se loguea a github de forma semi automatica.
 
-gh repo clone : Clona el repositorio indicado.
-
 git add <[archivo...]>: Agrega archivos a la etapa de staging.
 
-git status: Da el estado de cambios.
+git status: Da el estado del repositorio.
 
 git push: Publica en la nube los ultimos commit.
 
