@@ -1,0 +1,26 @@
+El Markdown es una forma simple de escribir texto con formato usando símbolos del teclado.
+Se usa mucho en GitHub porque permite crear documentos claros y más rápidos sin tener que usar editores complicados como Word.
+
+El funcionamiento es de la siguiente manera: primero se escribe el texto normal y después se agregan algunos símbolos 
+para indicar títulos, listas, código, etc. Después GitHub lo interpreta y lo muestra con formato.
+
+Ejemplos de sintaxis:
+
+Para hacer Títulos se usa el símbolo #:
+# Título grande 
+## Título mediano 
+### Título más chico
+
+Para listas:
+- elemento 1 
+- elemento 2 
+- elemento 3
+
+Pero también se pueden hacer listas numeradas:
+1. primer punto 
+2. segundo punto 
+3. tercer punto
+
+Para la negrita y la cursiva se usa *:
+**texto en negrita** 
+*texto en cursiva*
