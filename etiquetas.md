@@ -23,12 +23,29 @@ secciones, etc.).
 
 - `<li>`...`</li>`: Elemento dentro de una lista.
 
+- `<br>`: Salto de línea.
 
+- `<hr>`: Línea horizontal. 
 
+- `<tfoot>`...`</tfoot>`: Pie de la tabla.
 
+- `<tr>`...`<tr>`: Fila.
 
+- `<th>`...`<th>`: Títulos de las columnas.
 
+- `<td>`...`<td>`: Datos que se ubican en la fila
 
+-a
+
+-i
+
+-em
+
+-b
+
+-strong
+
+-u
 
 
 - `<img>`: Muestra imágenes. Necesita:
