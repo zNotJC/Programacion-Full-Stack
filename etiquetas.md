@@ -60,37 +60,67 @@ alt: descripción (importante)
 
 Etiquetas necesarias para resolver los nuevos issues(segunda instancias):
 
-`<html>`...`</html>`: Estructura principal del documento.
-`<head>`...`</head>`: Contiene metadatos e información de la página.
-`<title>`...`</title>`: Título que aparece en la pestaña del navegador.
-`<meta>`: Define configuraciones como caracteres o responsive.
-`<body>`...`</body>`: Contenido visible de la página
+-`<html>`...`</html>`: Estructura principal del documento.
 
-`<header>`...`</header>`: Encabezado de la página.
-`<main>`...`</main>`: Contenido principal.
-`<section>`...`</section>`: Secciones dentro de la página.
-`<footer>`...`</footer>`: Pie de página.
-`<div>`...`</div>`: Contenedor general para organizar elementos.
+-`<head>`...`</head>`: Contiene metadatos e información de la página.
 
-`<form>`...`</form>`: Formulario para ingreso de datos.
-`<label>`...`</label>`: Etiqueta descriptiva de cada campo.
-`<input>`: Campo de entrada de datos.
-`<textarea>`...`</textarea>`: Campo de texto amplio.
-`<select>`...`</select>`: Lista desplegable de opciones.
-`<option>`...`</option>`: Opciones dentro del select.
-`<button>`...`</button>`: Botón para enviar o ejecutar acciones.
+-`<title>`...`</title>`: Título que aparece en la pestaña del navegador.
 
-type="text": Para nombre y apellido.
-type="email": Para correo electrónico.
-type="tel": Para teléfono (permite teclado numérico en celular).
-type="password": Para contraseñas ocultas.
-type="file": Para adjuntar archivos (CV).
-type="checkbox": Para opciones como aceptar contacto.
-required: Hace obligatorio completar el campo.
-placeholder: Muestra una ayuda dentro del campo.
-autocomplete: Permite autocompletar datos automáticamente.
+-`<meta>`: Define configuraciones como caracteres o responsive.
 
-`<h1>`...`</h1>`: Título principal.
-`<h2>`..`/h2>`: Subtítulos.
-`<p>`...`</p>`: Párrafos de texto.
-`<span>`...`</span>`: Texto en línea para pequeños ajustes.
+-`<body>`...`</body>`: Contenido visible de la página
+
+
+-`<header>`...`</header>`: Encabezado de la página.
+
+-`<main>`...`</main>`: Contenido principal.
+
+-`<section>`...`</section>`: Secciones dentro de la página.
+
+-`<footer>`...`</footer>`: Pie de página.
+
+-`<div>`...`</div>`: Contenedor general para organizar elementos.
+
+
+-`<form>`...`</form>`: Formulario para ingreso de datos.
+
+-`<label>`...`</label>`: Etiqueta descriptiva de cada campo.
+
+-`<input>`: Campo de entrada de datos.
+
+-`<textarea>`...`</textarea>`: Campo de texto amplio.
+
+-`<select>`...`</select>`: Lista desplegable de opciones.
+
+-`<option>`...`</option>`: Opciones dentro del select.
+
+-`<button>`...`</button>`: Botón para enviar o ejecutar acciones.
+
+
+-type="text": Para nombre y apellido.
+
+-type="email": Para correo electrónico.
+
+-type="tel": Para teléfono (permite teclado numérico en celular).
+
+-type="password": Para contraseñas ocultas.
+
+-type="file": Para adjuntar archivos (CV).
+
+-type="checkbox": Para opciones como aceptar contacto.
+
+-required: Hace obligatorio completar el campo.
+
+-placeholder: Muestra una ayuda dentro del campo.
+
+-autocomplete: Permite autocompletar datos automáticamente.
+
+
+-`<h1>`...`</h1>`: Título principal.
+
+-`<h2>`..`/h2>`: Subtítulos.
+
+-`<p>`...`</p>`: Párrafos de texto.
+
+-`<span>`...`</span>`: Texto en línea para pequeños ajustes.
+
