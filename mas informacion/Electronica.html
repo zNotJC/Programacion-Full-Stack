@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Electrodomésticos</title>
+<title>Electrónica</title>
 
 <style>
 body {
@@ -43,14 +43,12 @@ header {
     color: #007BFF;
 }
 
-/* INFO OCULTA */
 .extra {
     display: none;
     text-align: left;
     margin-top: 10px;
 }
 
-/* BOTONES */
 .botones {
     display: flex;
     margin-top: 10px;
@@ -76,7 +74,6 @@ header {
     color: white;
 }
 
-/* VOLVER */
 .volver {
     display: block;
     width: 200px;
@@ -101,21 +98,21 @@ footer {
 <body>
 
 <header>
-    <h1>Electrodomésticos</h1>
+    <h1>Electrónica</h1>
 </header>
 
 <div class="productos">
 
-    <!-- PRODUCTO 1 -->
+    <!-- 1 -->
     <div class="card">
-        <img src="../img/heladera.jpg">
-        <h3>Heladera</h3>
-        <p>Alta eficiencia energética.</p>
+        <img src="../img/tv.jpg">
+        <h3>Televisor</h3>
+        <p>Alta definición.</p>
 
         <div class="extra">
-            <p>Peso: 70kg</p>
-            <p>Precio: $450 USD</p>
-            <p>Dimensiones: 180x70x60 cm</p>
+            <p>Peso: 12kg</p>
+            <p>Precio: $500 USD</p>
+            <p>Dimensiones: 55 pulgadas</p>
         </div>
 
         <div class="botones">
@@ -124,16 +121,34 @@ footer {
         </div>
     </div>
 
-    <!-- PRODUCTO 2 -->
+    <!-- 2 -->
     <div class="card">
-        <img src="../img/microondas.jpg">
-        <h3>Microondas</h3>
-        <p>Rápido y práctico.</p>
+        <img src="../img/laptop.jpg">
+        <h3>Laptop</h3>
+        <p>Rendimiento potente.</p>
 
         <div class="extra">
-            <p>Peso: 15kg</p>
+            <p>Peso: 2kg</p>
+            <p>Precio: $900 USD</p>
+            <p>Dimensiones: 15 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <img src="../img/auriculares.jpg">
+        <h3>Auriculares</h3>
+        <p>Sonido envolvente.</p>
+
+        <div class="extra">
+            <p>Peso: 0.5kg</p>
             <p>Precio: $120 USD</p>
-            <p>Dimensiones: 40x30x25 cm</p>
+            <p>Conectividad: Bluetooth</p>
         </div>
 
         <div class="botones">
@@ -142,16 +157,16 @@ footer {
         </div>
     </div>
 
-    <!-- PRODUCTO 3 -->
+    <!-- 4 -->
     <div class="card">
-        <img src="../img/lavarropas.jpg">
-        <h3>Lavarropas</h3>
-        <p>Gran capacidad.</p>
+        <img src="../img/celular.jpg">
+        <h3>Celular</h3>
+        <p>Última generación.</p>
 
         <div class="extra">
-            <p>Peso: 60kg</p>
-            <p>Precio: $380 USD</p>
-            <p>Dimensiones: 85x60x60 cm</p>
+            <p>Peso: 0.3kg</p>
+            <p>Precio: $800 USD</p>
+            <p>Pantalla: 6.5 pulgadas</p>
         </div>
 
         <div class="botones">
@@ -160,16 +175,34 @@ footer {
         </div>
     </div>
 
-    <!-- PRODUCTO 4 -->
+    <!-- 5 -->
     <div class="card">
-        <img src="../img/licuadora.jpg">
-        <h3>Licuadora</h3>
-        <p>Compacta y potente.</p>
+        <img src="../img/tablet.jpg">
+        <h3>Tablet</h3>
+        <p>Ligera y versátil.</p>
+
+        <div class="extra">
+            <p>Peso: 0.7kg</p>
+            <p>Precio: $400 USD</p>
+            <p>Pantalla: 10 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <img src="../img/parlante.jpg">
+        <h3>Parlante</h3>
+        <p>Sonido potente.</p>
 
         <div class="extra">
             <p>Peso: 3kg</p>
-            <p>Precio: $60 USD</p>
-            <p>Dimensiones: 30x20x20 cm</p>
+            <p>Precio: $150 USD</p>
+            <p>Conectividad: Bluetooth</p>
         </div>
 
         <div class="botones">
@@ -178,16 +211,16 @@ footer {
         </div>
     </div>
 
-    <!-- PRODUCTO 5 -->
+    <!-- 7 -->
     <div class="card">
-        <img src="../img/horno.jpg">
-        <h3>Horno eléctrico</h3>
-        <p>Cocción uniforme.</p>
+        <img src="../img/teclado.jpg">
+        <h3>Teclado</h3>
+        <p>Ergonómico.</p>
 
         <div class="extra">
-            <p>Peso: 25kg</p>
-            <p>Precio: $200 USD</p>
-            <p>Dimensiones: 50x40x40 cm</p>
+            <p>Peso: 1kg</p>
+            <p>Precio: $70 USD</p>
+            <p>Tipo: Mecánico</p>
         </div>
 
         <div class="botones">
@@ -196,63 +229,27 @@ footer {
         </div>
     </div>
 
-<!-- PRODUCTO 6 -->
-<div class="card">
-    <img src="../img/cafetera.jpg">
-    <h3>Cafetera</h3>
-    <p>Ideal para el día a día.</p>
+    <!-- 8 -->
+    <div class="card">
+        <img src="../img/mouse.jpg">
+        <h3>Mouse</h3>
+        <p>Precisión total.</p>
 
-    <div class="extra">
-        <p>Peso: 4kg</p>
-        <p>Precio: $90 USD</p>
-        <p>Dimensiones: 30x25x20 cm</p>
+        <div class="extra">
+            <p>Peso: 0.2kg</p>
+            <p>Precio: $40 USD</p>
+            <p>Tipo: Inalámbrico</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
     </div>
-
-    <div class="botones">
-        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
-        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
-    </div>
-</div>
-
-<!-- PRODUCTO 7 -->
-<div class="card">
-    <img src="../img/tostadora.jpg">
-    <h3>Tostadora</h3>
-    <p>Rápida y eficiente.</p>
-
-    <div class="extra">
-        <p>Peso: 3kg</p>
-        <p>Precio: $50 USD</p>
-        <p>Dimensiones: 28x18x15 cm</p>
-    </div>
-
-    <div class="botones">
-        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
-        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
-    </div>
-</div>
-
-<!-- PRODUCTO 8 -->
-<div class="card">
-    <img src="../img/aspiradora.jpg">
-    <h3>Aspiradora</h3>
-    <p>Gran potencia de succión.</p>
-
-    <div class="extra">
-        <p>Peso: 6kg</p>
-        <p>Precio: $180 USD</p>
-        <p>Dimensiones: 45x30x30 cm</p>
-    </div>
-
-    <div class="botones">
-        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
-        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
-    </div>
-</div>
 
 </div>
 
-<a href="PaginaPrincipal.html" class="volver">
+<a href="index.html" class="volver">
     Volver al inicio
 </a>
 
@@ -266,7 +263,6 @@ footer {
     </a>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleInfo(btn) {
     const extra = btn.parentElement.previousElementSibling;
