@@ -59,47 +59,38 @@ alt: descripción (importante)
 
 
 Etiquetas necesarias para resolver los nuevos issues(segunda instancias):
-Estructura básica (obligatorias).
-<html>
-<head>
-<body>
-<title>
-<meta>
 
-Estructura de la página.
-<header>
-<main>
-<section>
-<footer>
-<div>
+`<html>`...`</html>`: Estructura principal del documento.
+`<head>`...`</head>`: Contiene metadatos e información de la página.
+`<title>`...`</title>`: Título que aparece en la pestaña del navegador.
+`<meta>`: Define configuraciones como caracteres o responsive.
+`<body>`...`</body>`: Contenido visible de la página
 
-Para los formularios.
-<form>
-<label>
-<input>
-<textarea>
-<select>
-<option>
-<button>
+`<header>`...`</header>`: Encabezado de la página.
+`<main>`...`</main>`: Contenido principal.
+`<section>`...`</section>`: Secciones dentro de la página.
+`<footer>`...`</footer>`: Pie de página.
+`<div>`...`</div>`: Contenedor general para organizar elementos.
 
-Inputs específicos.
-type="text" 
-type="email" 
-type="tel" 
-type="file"
-type="checkbox" 
-type="password"
+`<form>`...`</form>`: Formulario para ingreso de datos.
+`<label>`...`</label>`: Etiqueta descriptiva de cada campo.
+`<input>`: Campo de entrada de datos.
+`<textarea>`...`</textarea>`: Campo de texto amplio.
+`<select>`...`</select>`: Lista desplegable de opciones.
+`<option>`...`</option>`: Opciones dentro del select.
+`<button>`...`</button>`: Botón para enviar o ejecutar acciones.
 
-Para el UX y ayudas.
-el placeholder (en <input> y <textarea>)
+type="text": Para nombre y apellido.
+type="email": Para correo electrónico.
+type="tel": Para teléfono (permite teclado numérico en celular).
+type="password": Para contraseñas ocultas.
+type="file": Para adjuntar archivos (CV).
+type="checkbox": Para opciones como aceptar contacto.
+required: Hace obligatorio completar el campo.
+placeholder: Muestra una ayuda dentro del campo.
+autocomplete: Permite autocompletar datos automáticamente.
 
-En el login ya lo tenemos con.
-<form>
-<input type="text"> (cédula)
-<input type="password">
-<button>
-
-Y como extras se pueden necesitar.
-<h1>, <h2>, <h3> 
-<p>
-<span>
+`<h1>`...`</h1>`: Título principal.
+`<h2>`..`/h2>`: Subtítulos.
+`<p>`...`</p>`: Párrafos de texto.
+`<span>`...`</span>`: Texto en línea para pequeños ajustes.
