@@ -55,3 +55,51 @@ alt: descripción (importante)
 - `<header>`...`</header>`: Representa la parte superior de la página (logo, nombre, slogan).
 
 - `<section>`...`</section>`: Sirve para dividir la página en partes (bienvenida, productos, testimonios, etc.).
+
+
+
+Etiquetas necesarias para resolver los nuevos issues(segunda instancias):
+Estructura básica (obligatorias).
+<html>
+<head>
+<body>
+<title>
+<meta>
+
+Estructura de la página.
+<header>
+<main>
+<section>
+<footer>
+<div>
+
+Para los formularios.
+<form>
+<label>
+<input>
+<textarea>
+<select>
+<option>
+<button>
+
+Inputs específicos.
+type="text" 
+type="email" 
+type="tel" 
+type="file"
+type="checkbox" 
+type="password"
+
+Para el UX y ayudas.
+el placeholder (en <input> y <textarea>)
+
+En el login ya lo tenemos con.
+<form>
+<input type="text"> (cédula)
+<input type="password">
+<button>
+
+Y como extras se pueden necesitar.
+<h1>, <h2>, <h3> 
+<p>
+<span>
