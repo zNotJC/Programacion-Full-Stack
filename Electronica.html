@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Electrónica</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 240px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #007BFF;
+}
+
+.extra {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.botones {
+    display: flex;
+    margin-top: 10px;
+}
+
+.botones a, .botones button {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ver {
+    background-color: #007BFF;
+    color: white;
+}
+
+.comprar {
+    background-color: #28a745;
+    color: white;
+}
+
+.volver {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Electrónica</h1>
+</header>
+
+<div class="productos">
+
+    <!-- 1 -->
+    <div class="card">
+        <img src="../img/tv.jpg">
+        <h3>Televisor</h3>
+        <p>Alta definición.</p>
+
+        <div class="extra">
+            <p>Peso: 12kg</p>
+            <p>Precio: $500 USD</p>
+            <p>Dimensiones: 55 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+        <img src="../img/laptop.jpg">
+        <h3>Laptop</h3>
+        <p>Rendimiento potente.</p>
+
+        <div class="extra">
+            <p>Peso: 2kg</p>
+            <p>Precio: $900 USD</p>
+            <p>Dimensiones: 15 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <img src="../img/auriculares.jpg">
+        <h3>Auriculares</h3>
+        <p>Sonido envolvente.</p>
+
+        <div class="extra">
+            <p>Peso: 0.5kg</p>
+            <p>Precio: $120 USD</p>
+            <p>Conectividad: Bluetooth</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <img src="../img/celular.jpg">
+        <h3>Celular</h3>
+        <p>Última generación.</p>
+
+        <div class="extra">
+            <p>Peso: 0.3kg</p>
+            <p>Precio: $800 USD</p>
+            <p>Pantalla: 6.5 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <img src="../img/tablet.jpg">
+        <h3>Tablet</h3>
+        <p>Ligera y versátil.</p>
+
+        <div class="extra">
+            <p>Peso: 0.7kg</p>
+            <p>Precio: $400 USD</p>
+            <p>Pantalla: 10 pulgadas</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <img src="../img/parlante.jpg">
+        <h3>Parlante</h3>
+        <p>Sonido potente.</p>
+
+        <div class="extra">
+            <p>Peso: 3kg</p>
+            <p>Precio: $150 USD</p>
+            <p>Conectividad: Bluetooth</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+        <img src="../img/teclado.jpg">
+        <h3>Teclado</h3>
+        <p>Ergonómico.</p>
+
+        <div class="extra">
+            <p>Peso: 1kg</p>
+            <p>Precio: $70 USD</p>
+            <p>Tipo: Mecánico</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+        <img src="../img/mouse.jpg">
+        <h3>Mouse</h3>
+        <p>Precisión total.</p>
+
+        <div class="extra">
+            <p>Peso: 0.2kg</p>
+            <p>Precio: $40 USD</p>
+            <p>Tipo: Inalámbrico</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+</div>
+
+<a href="PaginaPrincipal.html" class="volver">
+    Volver al inicio
+</a>
+
+<footer>
+    <p>Redes sociales</p>
+    <p>Facebook | Instagram</p>
+
+    <p>Contáctenos</p>
+    <a href="mailto:consultas@todoenblanco.com" style="color:white;">
+        Consultar
+    </a>
+</footer>
+
+<script>
+function toggleInfo(btn) {
+    const extra = btn.parentElement.previousElementSibling;
+
+    if (extra.style.display === "block") {
+        extra.style.display = "none";
+        btn.textContent = "Ver más";
+    } else {
+        extra.style.display = "block";
+        btn.textContent = "Ver menos";
+    }
+}
+</script>
+
+</body>
+</html>

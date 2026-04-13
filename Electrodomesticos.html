@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Electrodomésticos</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 240px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #007BFF;
+}
+
+/* INFO OCULTA */
+.extra {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    margin-top: 10px;
+}
+
+.botones a, .botones button {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ver {
+    background-color: #007BFF;
+    color: white;
+}
+
+.comprar {
+    background-color: #28a745;
+    color: white;
+}
+
+/* VOLVER */
+.volver {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Electrodomésticos</h1>
+</header>
+
+<div class="productos">
+
+    <!-- PRODUCTO 1 -->
+    <div class="card">
+        <img src="../img/heladera.jpg">
+        <h3>Heladera</h3>
+        <p>Alta eficiencia energética.</p>
+
+        <div class="extra">
+            <p>Peso: 70kg</p>
+            <p>Precio: $450 USD</p>
+            <p>Dimensiones: 180x70x60 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="card">
+        <img src="../img/microondas.jpg">
+        <h3>Microondas</h3>
+        <p>Rápido y práctico.</p>
+
+        <div class="extra">
+            <p>Peso: 15kg</p>
+            <p>Precio: $120 USD</p>
+            <p>Dimensiones: 40x30x25 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="card">
+        <img src="../img/lavarropas.jpg">
+        <h3>Lavarropas</h3>
+        <p>Gran capacidad.</p>
+
+        <div class="extra">
+            <p>Peso: 60kg</p>
+            <p>Precio: $380 USD</p>
+            <p>Dimensiones: 85x60x60 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- PRODUCTO 4 -->
+    <div class="card">
+        <img src="../img/licuadora.jpg">
+        <h3>Licuadora</h3>
+        <p>Compacta y potente.</p>
+
+        <div class="extra">
+            <p>Peso: 3kg</p>
+            <p>Precio: $60 USD</p>
+            <p>Dimensiones: 30x20x20 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- PRODUCTO 5 -->
+    <div class="card">
+        <img src="../img/horno.jpg">
+        <h3>Horno eléctrico</h3>
+        <p>Cocción uniforme.</p>
+
+        <div class="extra">
+            <p>Peso: 25kg</p>
+            <p>Precio: $200 USD</p>
+            <p>Dimensiones: 50x40x40 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+<!-- PRODUCTO 6 -->
+<div class="card">
+    <img src="../img/cafetera.jpg">
+    <h3>Cafetera</h3>
+    <p>Ideal para el día a día.</p>
+
+    <div class="extra">
+        <p>Peso: 4kg</p>
+        <p>Precio: $90 USD</p>
+        <p>Dimensiones: 30x25x20 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+
+<!-- PRODUCTO 7 -->
+<div class="card">
+    <img src="../img/tostadora.jpg">
+    <h3>Tostadora</h3>
+    <p>Rápida y eficiente.</p>
+
+    <div class="extra">
+        <p>Peso: 3kg</p>
+        <p>Precio: $50 USD</p>
+        <p>Dimensiones: 28x18x15 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+
+<!-- PRODUCTO 8 -->
+<div class="card">
+    <img src="../img/aspiradora.jpg">
+    <h3>Aspiradora</h3>
+    <p>Gran potencia de succión.</p>
+
+    <div class="extra">
+        <p>Peso: 6kg</p>
+        <p>Precio: $180 USD</p>
+        <p>Dimensiones: 45x30x30 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+
+</div>
+
+<a href="PaginaPrincipal.html" class="volver">
+    Volver al inicio
+</a>
+
+<footer>
+    <p>Redes sociales</p>
+    <p>Facebook | Instagram</p>
+
+    <p>Contáctenos</p>
+    <a href="mailto:consultas@todoenblanco.com" style="color:white;">
+        Consultar
+    </a>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleInfo(btn) {
+    const extra = btn.parentElement.previousElementSibling;
+
+    if (extra.style.display === "block") {
+        extra.style.display = "none";
+        btn.textContent = "Ver más";
+    } else {
+        extra.style.display = "block";
+        btn.textContent = "Ver menos";
+    }
+}
+</script>
+
+</body>
+</html>

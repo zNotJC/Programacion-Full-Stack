@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Todo en Blanco</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+/* HEADER */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: white;
+    color: #007BFF;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PORTADA */
+.portada {
+    text-align: center;
+    padding: 40px;
+}
+
+.portada img {
+    width: 300px;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bienvenida span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* PRODUCTOS */
+.productos {
+    text-align: center;
+    padding: 30px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.opcion {
+    text-align: center;
+}
+
+.opcion img {
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.opcion img:hover {
+    transform: scale(1.1);
+}
+
+/* BOTONES GRANDES */
+.boton-seccion {
+    display: block;
+    width: 320px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Todo en Blanco</div>
+
+    <a href="InicioSesion.html" class="login-btn">
+        Iniciar Sesión
+    </a>
+</header>
+
+<!-- PORTADA -->
+<div class="portada">
+    <img src="img/todo_en_blanco_logo.png" alt="Logo">
+</div>
+
+<!-- BIENVENIDA -->
+<div class="bienvenida">
+    <h2>Bienvenidos</h2>
+
+    <p>
+        Somos una empresa dedicada a la 
+        <span>distribución mayorista</span> de productos.
+    </p>
+
+    <p>
+        Ofrecemos <span>soluciones logísticas eficientes</span> 
+        para comercios en todo el país.
+    </p>
+</div>
+
+<!-- PRODUCTOS -->
+<div class="productos">
+    <h2>¿Por dónde deseas comenzar?</h2>
+
+    <div class="opciones">
+
+        <div class="opcion">
+            <a href="Electrodomesticos.html">
+                <img src="img/electrodomesticos.jpg">
+            </a>
+            <p>Electrodomésticos</p>
+        </div>
+
+        <div class="opcion">
+            <a href="Muebles.html">
+                <img src="img/muebles.jpg">
+            </a>
+            <p>Muebles</p>
+        </div>
+
+        <div class="opcion">
+            <a href="Electronica.html">
+                <img src="img/electronica.jpg">
+            </a>
+            <p>Electrónica</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- BOTONES -->
+<a href="SobreNosotros.html" class="boton-seccion">
+    ¿Quieres saber más sobre nosotros?
+</a>
+
+<a href="OportunidadTrabajo.html" class="boton-seccion">
+    ¿Buscas oportunidad de trabajo?
+</a>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>Redes sociales</p>
+    <p>Facebook | Instagram</p>
+
+    <p>Contáctenos</p>
+
+    <a href="mailto:consultas@todoenblanco.com" class="login-btn">
+        Consultar
+    </a>
+
+</footer>
+
+</body>
+</html>

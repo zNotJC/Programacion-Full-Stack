@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Muebles</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 240px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #007BFF;
+}
+
+.extra {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.botones {
+    display: flex;
+    margin-top: 10px;
+}
+
+.botones a, .botones button {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ver {
+    background-color: #007BFF;
+    color: white;
+}
+
+.comprar {
+    background-color: #28a745;
+    color: white;
+}
+
+.volver {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Muebles</h1>
+</header>
+
+<div class="productos">
+
+    <!-- 1 -->
+    <div class="card">
+        <img src="../img/sofa.jpg">
+        <h3>Sofá</h3>
+        <p>Máximo confort.</p>
+
+        <div class="extra">
+            <p>Peso: 40kg</p>
+            <p>Precio: $600 USD</p>
+            <p>Dimensiones: 200x90x90 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+        <img src="../img/mesa.jpg">
+        <h3>Mesa</h3>
+        <p>Diseño moderno.</p>
+
+        <div class="extra">
+            <p>Peso: 25kg</p>
+            <p>Precio: $250 USD</p>
+            <p>Dimensiones: 150x80x75 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <img src="../img/silla.jpg">
+        <h3>Silla</h3>
+        <p>Ligera y resistente.</p>
+
+        <div class="extra">
+            <p>Peso: 5kg</p>
+            <p>Precio: $80 USD</p>
+            <p>Dimensiones: 45x45x90 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <img src="../img/ropero.jpg">
+        <h3>Ropero</h3>
+        <p>Gran capacidad.</p>
+
+        <div class="extra">
+            <p>Peso: 60kg</p>
+            <p>Precio: $500 USD</p>
+            <p>Dimensiones: 180x120x60 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <img src="../img/escritorio.jpg">
+        <h3>Escritorio</h3>
+        <p>Ideal para oficina.</p>
+
+        <div class="extra">
+            <p>Peso: 30kg</p>
+            <p>Precio: $220 USD</p>
+            <p>Dimensiones: 140x70x75 cm</p>
+        </div>
+
+        <div class="botones">
+            <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+            <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- 6 -->
+<div class="card">
+    <img src="../img/cama.jpg">
+    <h3>Cama</h3>
+    <p>Descanso garantizado.</p>
+
+    <div class="extra">
+        <p>Peso: 50kg</p>
+        <p>Precio: $700 USD</p>
+        <p>Dimensiones: 200x160x50 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+
+<!-- 7 -->
+<div class="card">
+    <img src="../img/biblioteca.jpg">
+    <h3>Biblioteca</h3>
+    <p>Perfecta para organizar.</p>
+
+    <div class="extra">
+        <p>Peso: 35kg</p>
+        <p>Precio: $300 USD</p>
+        <p>Dimensiones: 180x80x30 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+
+<!-- 8 -->
+<div class="card">
+    <img src="../img/mesita.jpg">
+    <h3>Mesita de luz</h3>
+    <p>Compacta y funcional.</p>
+
+    <div class="extra">
+        <p>Peso: 10kg</p>
+        <p>Precio: $90 USD</p>
+        <p>Dimensiones: 50x40x45 cm</p>
+    </div>
+
+    <div class="botones">
+        <button class="ver" onclick="toggleInfo(this)">Ver más</button>
+        <a href="mailto:consultas@todoenblanco.com" class="comprar">Comprar</a>
+    </div>
+</div>
+    
+</div>
+
+<a href="PaginaPrincipal.html" class="volver">
+    Volver al inicio
+</a>
+
+<footer>
+    <p>Redes sociales</p>
+    <p>Facebook | Instagram</p>
+
+    <p>Contáctenos</p>
+    <a href="mailto:consultas@todoenblanco.com" style="color:white;">
+        Consultar
+    </a>
+</footer>
+
+<script>
+function toggleInfo(btn) {
+    const extra = btn.parentElement.previousElementSibling;
+
+    if (extra.style.display === "block") {
+        extra.style.display = "none";
+        btn.textContent = "Ver más";
+    } else {
+        extra.style.display = "block";
+        btn.textContent = "Ver menos";
+    }
+}
+</script>
+
+</body>
+</html>
