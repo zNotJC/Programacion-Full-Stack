@@ -1,10 +1,120 @@
 <!DOCTYPE html>
-<html>
-<title>Inicio Sesion</title>
-<body style="text-align:center; font-family:Arial;">
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inicio de Sesión</title>
 
-<h1>En construcción</h1>
-<img src="img/paginaenconstruccion.jpg" width="400">
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+/* HEADER */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* VOLVER */
+.boton {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ingreso de Empleados</h1>
+</header>
+
+<div class="contenedor">
+
+    <form>
+
+        <!-- CÉDULA -->
+        <input 
+            type="text" 
+            name="cedula"
+            placeholder="Cédula (sin puntos ni guiones)"
+            required
+            pattern="[0-9]{7,8}"
+            inputmode="numeric"
+        >
+
+        <!-- CONTRASEÑA -->
+        <input 
+            type="password" 
+            name="password"
+            placeholder="Contraseña"
+            required
+        >
+
+        <!-- BOTÓN -->
+        <button type="submit">Ingresar</button>
+
+    </form>
+
+</div>
+
+<a href="index.html" class="boton">
+    Volver al inicio
+</a>
+
+<footer>
+    <p>Todo en Blanco - Sistema interno</p>
+</footer>
 
 </body>
 </html>

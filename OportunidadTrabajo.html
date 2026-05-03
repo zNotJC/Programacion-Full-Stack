@@ -31,21 +31,40 @@ h2 {
     color: #007BFF;
 }
 
-/* PUESTOS */
-.puesto {
-    margin-bottom: 20px;
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.puesto h3 {
-    margin-bottom: 5px;
+input, textarea, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-/* LISTAS */
-ul {
-    margin-top: 5px;
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-/* BOTONES */
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTÓN VOLVER */
 .boton {
     display: block;
     width: 280px;
@@ -70,12 +89,10 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
     <h1>Oportunidades de Trabajo</h1>
 </header>
 
-<!-- INTRO -->
 <section>
     <h2>¿Querés formar parte de nuestro equipo?</h2>
     <p>
@@ -84,76 +101,58 @@ footer {
     </p>
 </section>
 
-<!-- PUESTOS -->
-<section>
-    <h2>Puestos Disponibles</h2>
-
-    <div class="puesto">
-        <h3>Logística</h3>
-        <ul>
-            <li>Organización de entregas</li>
-            <li>Control de stock</li>
-            <li>Coordinación de rutas</li>
-        </ul>
-    </div>
-
-    <div class="puesto">
-        <h3>Almacenero</h3>
-        <ul>
-            <li>Recepción de mercadería</li>
-            <li>Orden del depósito</li>
-            <li>Control de inventario</li>
-        </ul>
-    </div>
-
-    <div class="puesto">
-        <h3>Administración / Contabilidad</h3>
-        <ul>
-            <li>Gestión de facturación</li>
-            <li>Control de gastos</li>
-            <li>Registro de operaciones</li>
-        </ul>
-    </div>
-
-</section>
-
-<!-- REQUISITOS -->
-<section>
-    <h2>Requisitos Generales</h2>
-
-    <ul>
-        <li>Responsabilidad</li>
-        <li>Trabajo en equipo</li>
-        <li>Disponibilidad horaria</li>
-    </ul>
-</section>
-
-<!-- CONTACTO -->
 <section>
     <h2>Postulación</h2>
 
-    <p>Enviar CV a: <b>trabajo@todoenblanco.com</b></p>
-    <p>Asunto: CV + puesto deseado</p>
+    <form>
+
+        <!-- EMAIL -->
+        <input 
+            type="email" 
+            name="email"
+            placeholder="Correo electrónico" 
+            required 
+            autocomplete="email"
+        >
+
+        <!-- DESCRIPCIÓN -->
+        <textarea 
+            name="descripcion"
+            placeholder="Contanos sobre vos, experiencia, puesto al que aplicás, etc."
+            required
+        ></textarea>
+
+        <!-- ARCHIVO PDF -->
+        <input 
+            type="file" 
+            name="cv"
+            accept=".pdf" 
+            required
+        >
+
+        <!-- CHECKBOX -->
+        <label class="checkbox">
+            <input type="checkbox" required>
+            Acepto ser contactado por la empresa
+        </label>
+
+        <!-- BOTÓN -->
+        <button type="submit">Enviar CV</button>
+
+    </form>
+
 </section>
 
-<!-- VOLVER -->
 <a href="index.html" class="boton">
     Volver al inicio
 </a>
 
-<!-- FOOTER -->
 <footer>
-
-    <p>Redes sociales</p>
-    <p>Facebook | Instagram</p>
-
-    <p>Contáctenos</p>
-
-    <a href="mailto:consultas@todoenblanco.com" style="color:white;">
-        Consultar
-    </a>
-
+<p>Redes sociales</p>
+<p>Facebook</p>
+<p>Instagram</p>
 </footer>
+
 
 </body>
 </html>

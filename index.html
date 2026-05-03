@@ -59,31 +59,33 @@ header {
     font-weight: bold;
 }
 
-/* PRODUCTOS */
-.productos {
-    text-align: center;
-    padding: 30px;
+/* SECCIONES GENERALES */
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.opciones {
+/* FORMULARIOS */
+form {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.opcion {
-    text-align: center;
+input, select, textarea, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-.opcion img {
-    width: 150px;
-    border-radius: 50%;
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.opcion img:hover {
-    transform: scale(1.1);
 }
 
 /* BOTONES GRANDES */
@@ -108,91 +110,120 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* TESTIMONIOS */
+.testimonios {
+    text-align: center;
+}
+
+.persona {
+    margin: 20px;
+}
+
+.persona img {
+    width: 100px;
+    border-radius: 50%;
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="logo">Todo en Blanco</div>
-
-    <a href="InicioSesion.html" class="login-btn">
-        Iniciar Sesión
-    </a>
+    <a href="InicioSesion.html" class="login-btn">Iniciar Sesión</a>
 </header>
 
-<!-- PORTADA -->
 <div class="portada">
     <img src="img/todo_en_blanco_logo.png" alt="Logo">
 </div>
 
-<!-- BIENVENIDA -->
 <div class="bienvenida">
     <h2>Bienvenidos</h2>
-
-    <p>
-        Somos una empresa dedicada a la 
-        <span>distribución mayorista</span> de productos.
-    </p>
-
-    <p>
-        Ofrecemos <span>soluciones logísticas eficientes</span> 
-        para comercios en todo el país.
-    </p>
+    <p>Somos una empresa dedicada a la <span>distribución mayorista</span> de productos.</p>
+    <p>Ofrecemos <span>soluciones logísticas eficientes</span> para comercios en todo el país.</p>
 </div>
 
-<!-- PRODUCTOS -->
-<div class="productos">
-    <h2>Tenemos una gran variedad de productos!</h2>
+<!-- COBERTURA -->
+<section>
+<h2>Cobertura de Entregas</h2>
+<table border="1" width="100%">
+<tr><th>Región</th><th>Cobertura</th><th>Frecuencia</th></tr>
+<tr><td>Norte</td><td>Total</td><td>Diaria</td></tr>
+<tr><td>Centro</td><td>Parcial</td><td>Semanal</td></tr>
+<tr><td>Sur</td><td>Bajo demanda</td><td>Quincenal</td></tr>
+<tr><td>Montevideo</td><td>No disponible</td><td>-</td></tr>
+<tr><td>Maldonado</td><td>No disponible</td><td>-</td></tr>
+<tr><td>Canelones</td><td>No disponible</td><td>-</td></tr>
+<tr><td>Piriápolis</td><td>No disponible</td><td>-</td></tr>
+</table>
+</section>
 
-    <div class="opciones">
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+    <h2>Testimonios</h2>
 
-        <div class="opcion">
-            <a href="Electrodomesticos.html">
-                <img src="img/electrodomesticos.jpg">
-            </a>
-            <p>Electrodomésticos</p>
-        </div>
-
-        <div class="opcion">
-            <a href="Muebles.html">
-                <img src="img/muebles.jpg">
-            </a>
-            <p>Muebles</p>
-        </div>
-
-        <div class="opcion">
-            <a href="Electronica.html">
-                <img src="img/electronica.jpg">
-            </a>
-            <p>Electrónica</p>
-        </div>
-
+    <div class="persona">
+        <img src="img/Horacio Corantes.png" alt="Horacio">
+        <p><b>Horacio Corantes</b></p>
+        <p>"Excelente servicio, siempre cumplen en tiempo."</p>
     </div>
-</div>
 
-<!-- BOTONES -->
+    <div class="persona">
+        <img src="img/Austeberto Heneda.png" alt="Austeberto">
+        <p><b>Austeberto Heneda</b></p>
+        <p>"Muy confiable para pedidos grandes."</p>
+    </div>
+
+    <div class="persona">
+        <img src="img/Pincho Filoseda.png" alt="Pincho">
+        <p><b>Pincho Filoseda</b></p>
+        <p>"Buenos precios y atención rápida."</p>
+    </div>
+</section>
+
+<!-- FORMULARIO CONSULTAS -->
+<section>
+<h2>Consultas</h2>
+
+<form>
+
+<input type="text" name="nombre" placeholder="Nombre" required autocomplete="given-name">
+
+<input type="text" name="apellido" placeholder="Apellido" required autocomplete="family-name">
+
+<input type="tel" name="telefono" placeholder="099123456" required pattern="0[0-9]{8}" autocomplete="tel">
+
+<input type="email" name="email" placeholder="correo@mail.com" required autocomplete="email">
+
+<select name="tipo" required>
+<option value="">Tipo de consulta</option>
+<option value="catalogo">Catálogo</option>
+<option value="repuestos">Repuestos</option>
+<option value="desperfectos">Desperfectos</option>
+</select>
+
+<textarea name="descripcion" placeholder="Explique su consulta" required></textarea>
+
+<button type="submit">Enviar consulta</button>
+
+</form>
+
+</section>
+
 <a href="SobreNosotros.html" class="boton-seccion">
-    ¿Quieres saber más sobre nosotros?
+¿Quieres saber más sobre nosotros?
 </a>
 
 <a href="OportunidadTrabajo.html" class="boton-seccion">
-    ¿Buscas oportunidad de trabajo?
+¿Buscas oportunidad de trabajo?
 </a>
 
-<!-- FOOTER -->
 <footer>
-
-    <p>Redes sociales</p>
-    <p>Facebook | Instagram</p>
-
-    <p>Contáctenos</p>
-
-    <a href="mailto:consultas@todoenblanco.com" class="login-btn">
-        Consultar
-    </a>
-
+<p>Redes sociales</p>
+<p>Facebook</p>
+<p>Instagram</p>
 </footer>
 
 </body>
