@@ -14,11 +14,15 @@ body {
     color: #333;
 }
 
+p {
+    line-height: 1.6;
+}
+
 /* HEADER */
 header {
     background-color: #4e5b64;
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +33,7 @@ header {
     color: white;
     text-decoration: none;
     margin-left: 15px;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -41,20 +45,25 @@ header {
 
 /* CONTENIDO */
 main {
-    margin: 20px;
+    margin: 30px;
+}
+
+/* CONTENEDOR TABLA (clave para estética) */
+.tabla-contenedor {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* TABLA */
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 th, td {
-    padding: 12px;
+    padding: 14px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
@@ -72,11 +81,12 @@ tr:hover {
 button, .boton {
     background-color: #47606f;
     color: white;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 13px;
 }
 
 button:hover, .boton:hover {
@@ -86,7 +96,7 @@ button:hover, .boton:hover {
 
 /* BOTONES DE ACCIÓN */
 .acciones button {
-    margin: 2px;
+    margin: 3px;
 }
 
 /* FOOTER */
@@ -119,38 +129,42 @@ footer {
 
 <h2>Empleados registrados</h2>
 
-<table>
-    <tr>
-        <th>Cédula</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Cargo</th>
-        <th>Acciones</th>
-    </tr>
+<div class="tabla-contenedor">
 
-    <tr>
-        <td>12345678</td>
-        <td>Juan</td>
-        <td>Pérez</td>
-        <td>Logística</td>
-        <td class="acciones">
-            <button>Editar</button>
-            <button>Eliminar</button>
-        </td>
-    </tr>
+    <table>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Cargo</th>
+            <th>Acciones</th>
+        </tr>
 
-    <tr>
-        <td>87654321</td>
-        <td>Ana</td>
-        <td>Gómez</td>
-        <td>Administración</td>
-        <td class="acciones">
-            <button>Editar</button>
-            <button>Eliminar</button>
-        </td>
-    </tr>
+        <tr>
+            <td>12345678</td>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>Logística</td>
+            <td class="acciones">
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
 
-</table>
+        <tr>
+            <td>87654321</td>
+            <td>Ana</td>
+            <td>Gómez</td>
+            <td>Administración</td>
+            <td class="acciones">
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
 
 </main>
 
