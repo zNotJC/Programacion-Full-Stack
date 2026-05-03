@@ -5,46 +5,52 @@
 <title>Sobre Nosotros</title>
 
 <style>
+
+/* BASE */
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f5f9ff;
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* HEADER */
 header {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    display: flex;
-    gap: 15px;
-}
-
+/* NAVBAR */
 .navbar a {
-    background-color: white;
-    color: #007BFF;
-    padding: 8px 12px;
-    border-radius: 8px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    margin-left: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.navbar a:active {
-    transform: scale(0.95);
+    background-color: #eeb906;
+    color: black;
 }
 
 /* SECCIONES */
@@ -56,12 +62,12 @@ section {
 }
 
 h2 {
-    color: #007BFF;
+    color: #47606f;
 }
 
-/* HISTORIA DESTACADA */
+/* HISTORIA */
 .historia span {
-    color: #007BFF;
+    color: #47606f;
     font-weight: bold;
 }
 
@@ -73,13 +79,13 @@ table {
 }
 
 th, td {
-    border: 1px solid #007BFF;
+    border: 1px solid #4e5b64;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
 }
 
@@ -97,26 +103,39 @@ th {
     border-radius: 50%;
 }
 
-/* BOTONES */
+/* BOTONES UNIFICADOS */
+button, .boton {
+    background-color: #47606f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+button:hover, .boton:hover {
+    background-color: #eeb906;
+    color: black;
+}
+
+/* BOTÓN VOLVER */
 .boton {
     display: block;
     width: 250px;
     margin: 20px auto;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 /* FOOTER */
 footer {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 </style>
 </head>
 

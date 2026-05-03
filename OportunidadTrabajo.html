@@ -5,50 +5,56 @@
 <title>Oportunidad de Trabajo</title>
 
 <style>
+
+/* BASE */
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f5f9ff;
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* HEADER */
 header {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    display: flex;
-    gap: 15px;
-}
-
+/* NAVBAR */
 .navbar a {
-    background-color: white;
-    color: #007BFF;
-    padding: 8px 12px;
-    border-radius: 8px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    margin-left: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.navbar a:active {
-    transform: scale(0.95);
+    background-color: #eeb906;
+    color: black;
 }
 
 /* SECCIONES */
-section {
+section, .postulacion {
     background: white;
     margin: 20px;
     padding: 20px;
@@ -56,77 +62,26 @@ section {
 }
 
 h2 {
-    color: #007BFF;
+    color: #47606f;
 }
 
-/* FORMULARIO */
+/* FORMULARIOS */
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
 }
 
-input, textarea, button {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* CHECKBOX */
-.postulacion {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.postulacion form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.postulacion input,
-.postulacion textarea {
+input, textarea {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
 
-.postulacion textarea {
-    height: 100px;
+textarea {
     resize: none;
-}
-
-.check {
-    font-size: 14px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    height: 100px;
 }
 
 /* CHECKBOX */
@@ -134,6 +89,25 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
+}
+
+/* BOTONES UNIFICADOS */
+button, .boton {
+    background-color: #47606f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+button:hover, .boton:hover {
+    background-color: #eeb906;
+    color: black;
 }
 
 /* BOTÓN VOLVER */
@@ -141,21 +115,16 @@ button:hover {
     display: block;
     width: 280px;
     margin: 20px auto;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 /* FOOTER */
 footer {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 </style>
 </head>
 

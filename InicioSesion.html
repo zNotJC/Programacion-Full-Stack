@@ -5,121 +5,100 @@
 <title>Inicio de Sesión</title>
 
 <style>
+
+/* BASE */
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f5f9ff;
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /* HEADER */
 header {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    display: flex;
-    gap: 15px;
-}
-
+/* NAVBAR */
 .navbar a {
-    background-color: white;
-    color: #007BFF;
-    padding: 8px 12px;
-    border-radius: 8px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    margin-left: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: #eeb906;
+    color: black;
 }
 
-.navbar a:active {
-    transform: scale(0.95);
-}
-
-/* CONTENEDOR */
+/* CONTENEDOR LOGIN */
 .contenedor {
     max-width: 400px;
     margin: 40px auto;
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
+    text-align: center;
 }
 
 /* FORMULARIO */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
-input, button {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-/* BOTÓN */
-button {
-    background-color: #007BFF;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* LOGIN */
-.login {
-    background: white;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-}
-
-.login form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.login input {
+input {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
 
-/* VOLVER */
+/* BOTONES UNIFICADOS */
+button, .boton {
+    background-color: #47606f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+button:hover, .boton:hover {
+    background-color: #eeb906;
+    color: black;
+}
+
+/* BOTÓN VOLVER */
 .boton {
     display: block;
     width: 200px;
     margin: 20px auto;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 /* FOOTER */
 footer {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 </style>
 </head>
 

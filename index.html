@@ -5,15 +5,32 @@
 <title>Todo en Blanco</title>
 
 <style>
+
+/* BASE */
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f5f9ff;
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* HEADER */
 header {
-    background-color: #007BFF;
+    background-color: #4e5b64;
     color: white;
     padding: 15px;
     display: flex;
@@ -26,38 +43,51 @@ header {
     font-weight: bold;
 }
 
+/* NAVBAR */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #eeb906;
+    color: black;
+}
+
+/* BOTONES (UNIFICADOS) */
+button, .boton, .boton-seccion {
+    background-color: #47606f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .boton:hover, .boton-seccion:hover {
+    background-color: #eeb906;
+    color: black;
+}
+
+/* BOTÓN LOGIN (ajustado al sistema) */
 .login-btn {
-    background-color: white;
-    color: #007BFF;
+    background-color: #47606f;
+    color: white;
     padding: 8px 15px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    display: flex;
-    gap: 15px;
-}
-
-.navbar a {
-    background-color: white;
-    color: #007BFF;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.navbar a:active {
-    transform: scale(0.95);
+.login-btn:hover {
+    background-color: #eeb906;
+    color: black;
 }
 
 /* PORTADA */
@@ -70,34 +100,26 @@ header {
     width: 300px;
 }
 
-/* BIENVENIDA */
-.bienvenida {
+/* SECCIONES */
+section, .bienvenida, .contacto {
     background: white;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
+}
+
+/* BIENVENIDA */
+.bienvenida {
     text-align: center;
 }
 
 .bienvenida span {
-    color: #007BFF;
+    color: #47606f;
     font-weight: bold;
-}
-
-/* SECCIONES GENERALES */
-section {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 /* CONTACTO */
 .contacto {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -105,6 +127,7 @@ section {
     margin: 5px 0;
 }
 
+/* FORMULARIOS */
 form {
     margin-top: 15px;
     display: flex;
@@ -123,52 +146,14 @@ textarea {
     height: 100px;
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* BOTONES GRANDES */
+/* BOTÓN SECCIÓN (ajustes específicos) */
 .boton-seccion {
     display: block;
     width: 320px;
     margin: 20px auto;
-    padding: 15px;
-    background-color: #007BFF;
-    color: white;
     text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
     font-weight: bold;
 }
-
-/* FOOTER */
-footer {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 
 /* TESTIMONIOS */
 .testimonios {
@@ -182,6 +167,25 @@ footer a:hover {
 .persona img {
     width: 100px;
     border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4e5b64;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #eeb906;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 </style>
