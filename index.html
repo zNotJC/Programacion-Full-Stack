@@ -92,25 +92,48 @@ section {
     border-radius: 10px;
 }
 
-/* FORMULARIOS */
+/* CONTACTO */
+.contacto {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-contacto p {
+    margin: 5px 0;
+}
+
 form {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input, select, textarea, button {
+input, select, textarea {
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid #ccc;
-    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
 }
 
 button {
     background-color: #007BFF;
     color: white;
-    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 /* BOTONES GRANDES */
@@ -135,6 +158,17 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* TESTIMONIOS */
 .testimonios {
@@ -215,9 +249,19 @@ footer {
     </div>
 </section>
 
-<!-- FORMULARIO CONSULTAS -->
-<section id="contacto">
-<h2>Consultas</h2>
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="contacto">
+
+<h2>Contáctanos</h2>
+
+<!-- MEDIOS DE CONTACTO -->
+<div class="info-contacto">
+<p><b>Teléfono fijo:</b> 45677373</p>
+<p><b>Celular / WhatsApp:</b> 59895324444</p>
+<p><b>Email clientes:</b> clientestodoenblanco@gmail.com</p>
+<p><b>Email general:</b> todoenblanco@gmail.com</p>
+<p><b>Instagram:</b> @todoenblanco</p>
+</div>
 
 <form>
 
@@ -225,9 +269,11 @@ footer {
 
 <input type="text" name="apellido" placeholder="Apellido" required autocomplete="family-name">
 
-<input type="tel" name="telefono" placeholder="099123456" required pattern="0[0-9]{8}" autocomplete="tel">
+<input type="tel" name="telefono" placeholder="099123456"
+pattern="[0-9]{9}" required autocomplete="tel">
 
-<input type="email" name="email" placeholder="correo@mail.com" required autocomplete="email">
+<input type="email" name="email" placeholder="correo@mail.com"
+required autocomplete="email">
 
 <select name="tipo" required>
 <option value="">Tipo de consulta</option>
@@ -238,7 +284,7 @@ footer {
 
 <textarea name="descripcion" placeholder="Explique su consulta" required></textarea>
 
-<button type="submit">Enviar consulta</button>
+<button type="submit">Enviar Consulta</button>
 
 </form>
 
@@ -246,9 +292,13 @@ footer {
 
 
 <footer>
-<p>Redes sociales</p>
-<p>Facebook</p>
-<p>Instagram</p>
+
+    <p>© Todo en Blanco</p>
+
+    <p>
+        <a href="https://instagram.com/todoenblanco" target="_blank">Instagram</a>
+    </p>
+
 </footer>
 
 </body>
