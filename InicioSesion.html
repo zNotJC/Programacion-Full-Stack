@@ -15,8 +15,36 @@ body {
 header {
     background-color: #007BFF;
     color: white;
-    text-align: center;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    background-color: white;
+    color: #007BFF;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.navbar a:active {
+    transform: scale(0.95);
 }
 
 /* CONTENEDOR */
@@ -77,6 +105,14 @@ footer {
 
 <header>
     <h1>Ingreso de Empleados</h1>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="SobreNosotros.html">Sobre Nosotros</a>
+        <a href="index.html#contacto">Contáctanos</a>
+        <a href="OportunidadTrabajo.html">Trabajo</a>
+        <a href="InicioSesion.html">Ingresar</a>
+    </nav>
 </header>
 
 <div class="contenedor">
