@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel de Administración</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f9ff;
+}
+
+/* HEADER */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+/* NAV */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* TABLA */
+.tabla {
+    margin: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #007BFF;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* BOTONES */
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modificar {
+    background-color: #eeb906;
+}
+
+.eliminar {
+    background-color: red;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Todo en Blanco</div>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="InicioSesion.html">Cerrar sesión</a>
+    </nav>
+</header>
+
+<section class="tabla">
+
+<h2>Panel de Administración</h2>
+
+<table>
+
+<tr>
+    <th>Cédula</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Cargo</th>
+    <th>Acciones</th>
+</tr>
+
+<tr>
+    <td>12345678</td>
+    <td>Juan</td>
+    <td>Pérez</td>
+    <td>Logística</td>
+    <td>
+        <button class="btn modificar">Modificar</button>
+        <button class="btn eliminar">Eliminar</button>
+    </td>
+</tr>
+
+<tr>
+    <td>23456789</td>
+    <td>Ana</td>
+    <td>Gómez</td>
+    <td>Administración</td>
+    <td>
+        <button class="btn modificar">Modificar</button>
+        <button class="btn eliminar">Eliminar</button>
+    </td>
+</tr>
+
+<tr>
+    <td>34567890</td>
+    <td>Carlos</td>
+    <td>Rodríguez</td>
+    <td>Almacén</td>
+    <td>
+        <button class="btn modificar">Modificar</button>
+        <button class="btn eliminar">Eliminar</button>
+    </td>
+</tr>
+
+</table>
+
+</section>
+
+</body>
+</html>
