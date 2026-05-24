@@ -1,98 +1,33 @@
-
-/* BASE */
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    background-color: #c0c0c0;
-    color: #333;
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
-p {
-    line-height: 1.6;
+section{
+    text-align:center;
 }
 
-/* HEADER */
-header {
-    background-color: #4e5b64;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contenedor{
+    width:35%;
+    min-width:18rem;
+
+    margin:auto;
+
+    background:white;
+    padding:2rem;
+
+    border-radius:0.625rem;
+
+    text-align:center;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+    flex-grow:1;
 }
 
-/* NAVBAR */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #eeb906;
-    color: black;
-}
-
-/* CONTENEDOR LOGIN */
-.contenedor {
-    max-width: 400px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* FORMULARIO */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-input {
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-/* BOTONES UNIFICADOS */
-button, .boton {
-    background-color: #47606f;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    font-weight: bold;
-}
-
-button:hover, .boton:hover {
-    background-color: #eeb906;
-    color: black;
-}
-
-/* BOTÓN VOLVER */
-.boton {
-    display: block;
-    width: 200px;
-    margin: 25px auto;
-}
-
-/* FOOTER */
-footer {
-    background-color: #4e5b64;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+.boton{
+    display:block;
+    width:200px;
+    margin:25px auto;
 }

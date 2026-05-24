@@ -1,102 +1,44 @@
-/* BASE */
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    background-color: #c0c0c0;
-    color: #333;
+main{
+    margin:30px;
 }
 
-p {
-    line-height: 1.6;
+.tabla-contenedor{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* HEADER */
-header {
-    background-color: #4e5b64;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-/* NAVBAR */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
+th,
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
 }
 
-.navbar a:hover {
-    background-color: #eeb906;
-    color: black;
+th{
+    background-color:#4e5b64;
+    color:white;
 }
 
-/* CONTENIDO */
-main {
-    margin: 30px;
+tr:hover{
+    background-color:#f2f2f2;
 }
 
-/* CONTENEDOR TABLA (clave para estética) */
-.tabla-contenedor {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* requisito: operaciones en columna */
+
+.acciones{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    align-items:center;
 }
 
-/* TABLA */
-table {
-    width: 100%;
-    border-collapse: collapse;
+button{
+    font-size:0.9rem;
 }
-
-th, td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #4e5b64;
-    color: white;
-}
-
-tr:hover {
-    background-color: #f2f2f2;
-}
-
-/* BOTONES UNIFICADOS */
-button, .boton {
-    background-color: #47606f;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 13px;
-}
-
-button:hover, .boton:hover {
-    background-color: #eeb906;
-    color: black;
-}
-
-/* BOTONES DE ACCIÓN */
-.acciones button {
-    margin: 3px;
-}
-
-/* FOOTER */
-footer {
-    background-color: #4e5b64;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
