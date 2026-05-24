@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Oportunidad de Trabajo</title>
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/OportunidadTrabajo.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Oportunidades de Trabajo</h1>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="SobreNosotros.html">Sobre Nosotros</a>
+        <a href="index.html#contacto">Contáctanos</a>
+        <a href="OportunidadTrabajo.html">Trabajo</a>
+        <a href="InicioSesion.html">Ingresar</a>
+    </nav>
+</header>
+
+<section>
+    <h2>¿Querés formar parte de nuestro equipo?</h2>
+    <p>
+        En Todo en Blanco buscamos personas comprometidas que quieran crecer 
+        dentro de una empresa en constante desarrollo.
+    </p>
+</section>
+
+<section class="postulacion">
+    <h2>Postulación</h2>
+
+    <form>
+
+        <!-- EMAIL -->
+        <input 
+            type="email" 
+            name="email"
+            placeholder="Correo electrónico" 
+            required 
+            autocomplete="email"
+        >
+
+        <!-- DESCRIPCIÓN -->
+        <textarea 
+            name="mensaje"
+            placeholder="Contanos sobre vos, experiencia y puesto al que aplicás"
+            required
+        ></textarea>
+
+        <!-- ARCHIVO PDF -->
+        <input 
+            type="file" 
+            name="cv"
+            accept=".pdf" 
+            required
+        >
+
+        <!-- CHECKBOX -->
+        <label class="checkbox">
+            <input type="checkbox" required>
+            Acepto ser contactado por la empresa
+        </label>
+
+        <!-- BOTÓN -->
+        <button type="submit">Enviar Solicitud</button>
+
+    </form>
+
+</section>
+
+<a href="index.html" class="boton">
+    Volver al inicio
+</a>
+
+<footer>
+
+    <p>© Todo en Blanco</p>
+
+    <p>
+        <a href="https://instagram.com/todoenblanco" target="_blank">Instagram</a>
+    </p>
+
+</footer>
+
+
+</body>
+</html>
